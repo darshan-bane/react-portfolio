@@ -1,6 +1,7 @@
 import { FaBookReader } from "react-icons/fa";
 import TimelineItem from "./TimelineItem";
 import { MdWork } from "react-icons/md";
+import SkillItem from "./SkillItem";
 
 const Resume = () => {
   return (
@@ -33,6 +34,9 @@ const Resume = () => {
           />
         </ol>
       </div>
+
+      {/* ===== experience ==== */}
+
       <div className="timeline">
         <div className="title-wrapper">
           <div className="icon-box">
@@ -57,6 +61,20 @@ const Resume = () => {
             description="lorem ispem lorem ispemlorem ispemlorem ispemlorem ispemlorem ispemlorem ispemlorem ispemlorem ispem"
           />
         </ol>
+      </div>
+
+      {/* ===== skills ==== */}
+
+      <div className="skill">
+        <h3 className="h3 skills-title"> My Skills</h3>
+        <ul className="skills-list content-card">
+          <SkillItem title="HTML" value={90} />
+          <SkillItem title="CSS" value={80} />
+          <SkillItem title="Bootstrap" value={85} />
+          <SkillItem title="Wordpress" value={90} />
+          <SkillItem title="JS" value={50} />
+          <SkillItem title="React JS" value={40} />
+        </ul>
       </div>
     </section>
   );
